@@ -14,5 +14,4 @@
     - name: call the common role on just one server
       include_role: 
         name: common
-        apply:
-          delegate_to: "{{ object_name }}"
+      when: "{{ groups['{{ object_name }}'] }}"

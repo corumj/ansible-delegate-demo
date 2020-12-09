@@ -9,4 +9,4 @@
     - name: call the common role
       import_role: 
         name: common
-      delegate_to: test
+      delegate_to: "{{ groups['test'] }}"

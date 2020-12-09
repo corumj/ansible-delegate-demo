@@ -7,3 +7,4 @@
     action: start
   roles:
     - name: common
+      delegate_to: test

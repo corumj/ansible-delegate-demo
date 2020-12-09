@@ -1,4 +1,4 @@
 ---
 - name: Delegated block of code 
   debug:
-    msg: "Hello World, the value of object_name is {{ object_name }}"
+    msg: "Hello World, the value of object_name is {{ object_name }} and this executed on {{ ansible_host }}"

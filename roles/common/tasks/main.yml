@@ -1,5 +1,5 @@
 ---
-- name: call the role
-  import_role:
-    name: startstopWAS 
+- name: Delegated block of code 
+  debug:
+    msg: "Hello World, the value of object_name is {{ object_name }}"
   delegate_to: test

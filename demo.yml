@@ -5,7 +5,5 @@
     object_name: some_application # that is also a group name  
     object_type: application_server 
     action: start
-  tasks:
-    - name: Call the common role 
-      include_role:
-        name: common
+  roles:
+    - name: common

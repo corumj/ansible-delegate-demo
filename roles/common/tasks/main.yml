@@ -1,4 +1,7 @@
 ---
-- name: Hello World 
-  debug:
-    msg: "Hello World"
+- name: Delegated block of code 
+  delegate_to: "{{ object_name }}"
+  block:
+    - name: Hello World 
+      debug:
+        msg: "Hello World"

@@ -8,5 +8,4 @@
   tasks:
     - name: Call the common role 
       include_role:
-        name: common 
-      delegate_to: "{{ object_name }}"
+        name: common

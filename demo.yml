@@ -7,10 +7,6 @@
     object_type: application_server 
     action: start
   tasks:
-    - name: Do something on all the servers
-      debug:
-        msg: "hello from all the servers"
-
     - name: call the common role on just one server
       include_role: 
         name: common

@@ -7,6 +7,6 @@
     action: start
   tasks:
     - name: call the common role
-      include_role: 
-        - name: common
+      import_role: 
+        name: common
       delegate_to: test

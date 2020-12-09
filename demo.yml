@@ -16,4 +16,3 @@
         name: common
         apply:
           delegate_to: "{{ object_name }}"
-      run_once: yes

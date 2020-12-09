@@ -1,6 +1,7 @@
 --- 
 - name: Call a role with delegate 
   hosts: all
+  gather_facts: no
   vars:
     object_name: some_application # that is also a group name  
     object_type: application_server 

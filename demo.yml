@@ -1,0 +1,10 @@
+--- 
+- name: Call a role with delegate 
+  hosts: all
+  vars:
+    object_name: some_application # that is also a group name  
+    object_type: application_server 
+    action: start
+  roles:
+    - role: common 
+      delegate_to: "{{ object_name }}"

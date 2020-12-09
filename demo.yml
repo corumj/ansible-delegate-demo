@@ -5,6 +5,8 @@
     object_name: some_application # that is also a group name  
     object_type: application_server 
     action: start
-  roles:
-    - role: common 
+  tasks:
+    - name: Call the common role 
+      include_role:
+        - common 
       delegate_to: "{{ object_name }}"

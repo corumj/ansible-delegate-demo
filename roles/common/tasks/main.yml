@@ -1,4 +1,5 @@
 ---
-- name: Delegated block of code 
-  debug:
-    msg: "Hello World, the value of object_name is {{ object_name }}"
+- name: call the role
+  include_role:
+    name: startstopWAS 
+  delegate_to: test

@@ -1,0 +1,4 @@
+---
+- name: Delegated block of code 
+  debug:
+    msg: "Hello World, the value of object_name is {{ object_name }}"
